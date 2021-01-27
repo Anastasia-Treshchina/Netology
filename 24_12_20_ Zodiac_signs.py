@@ -40,9 +40,9 @@ while True:
             elif (20 <= day <= 31 and month == 1) or (1 <= day <= 18 and
                                                       month == 2):
                 print("\nВаш знак зодиака Водолей!\n")
-            elif (30 <= day <= 31 and month == 2) or (day == 31 and month == 4) \
-                    or (day == 31 and month == 6) or (day == 31 and month == 9) \
-                    or (day == 31 and month == 11):
+            elif ((30 <= day <= 31 and month == 2) or
+                  (day == 31 and month == 4) or (day == 31 and month == 6) or
+                  (day == 31 and month == 9) or (day == 31 and month == 11)):
                 print("\nВы ввели некорректную дату!\n")
             elif (19 <= day <= 29 and month == 2) or (1 <= day <= 20 and
                                                       month == 3):
