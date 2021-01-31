@@ -139,6 +139,8 @@ def get_add_shelf(directory):
 
 
 def main(documents, directory):
+    print(f" \n 1. Список всех документов\n\n{get_list(documents)} \n"
+          f" 2. Полки с документами\n\n{directories}\n")
     print("Список команд:\n 1. p - 'people' Запрашивает номер документа и "
           "выведет имя человека, которому он принадлежит.\n "
           "2. s - 'shelf' Запрашивает номер документа и выведет номер полки, "
@@ -149,12 +151,12 @@ def main(documents, directory):
           "номер документа и удалит его из каталога и из перечня полок.\n "
           "6. m - 'move' запросит номер документа и целевую полку и "
           "переместит его с текущей полки на целевую.\n 7. as - 'add shelf' "
-          "запросит номер новой полки и добавит ее в перечень.\n")
-    print(f" \n1. Список всех документов\n\n{get_list(documents)} \n"
-          f"2. Полки с документами\n\n{directories}\n")
+          "запросит номер новой полки и добавит ее в перечень.\n 8. q - "
+          "'quit' Выход")
+
 
     while True:
-        user_input = input('Введите команду - ')
+        user_input = input('Введите команду (p, s, l, a, d, m, as, q) - ')
         if user_input == 'p':
             print(get_people(documents))
         elif user_input == 's':
